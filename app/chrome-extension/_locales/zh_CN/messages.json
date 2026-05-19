@@ -552,5 +552,143 @@
   "featureRecordReplay": {
     "message": "录制回放",
     "description": "录制与回放功能的显示名称"
-  }
+  },
+  "backHomeTitle": { "message": "返回首页", "description": "返回首页按钮提示" },
+  "backButton": { "message": "返回", "description": "返回按钮文案" },
+  "sidepanelNavigatorTooltip": {
+    "message": "切换页面（可拖拽移动，双击重置位置）",
+    "description": "侧边栏浮动导航按钮提示"
+  },
+  "sidepanelNavigatorTitle": {
+    "message": "切换页面",
+    "description": "侧边栏浮动导航菜单标题"
+  },
+  "elementMarkerCurrentPageLabel": {
+    "message": "当前页面",
+    "description": "元素标注管理中的当前页面标签"
+  },
+  "elementMarkerMarkedElementsLabel": {
+    "message": "已标注元素",
+    "description": "已标注元素数量标签"
+  },
+  "elementMarkerAddTitle": { "message": "新增标注", "description": "新增标注标题" },
+  "elementMarkerEditTitle": { "message": "编辑标注", "description": "编辑标注标题" },
+  "elementMarkerNamePlaceholder": {
+    "message": "名称，如 登录按钮",
+    "description": "元素标注名称占位文案"
+  },
+  "elementMarkerSelectorPlaceholder": {
+    "message": "CSS 选择器",
+    "description": "CSS 选择器占位文案"
+  },
+  "elementMarkerSelectorOrXPathPlaceholder": {
+    "message": "CSS 选择器或 XPath",
+    "description": "选择器或 XPath 占位文案"
+  },
+  "selectorTypeLabel": { "message": "选择器类型", "description": "选择器类型标签" },
+  "matchTypeLabel": { "message": "匹配类型", "description": "匹配类型标签" },
+  "selectorLabel": { "message": "选择器", "description": "选择器字段标签" },
+  "matchTypePrefix": { "message": "路径前缀", "description": "路径前缀匹配类型" },
+  "matchTypeExact": { "message": "精确匹配", "description": "精确匹配类型" },
+  "matchTypeHost": { "message": "域名", "description": "域名匹配类型" },
+  "clearButton": { "message": "清空", "description": "清空按钮文案" },
+  "validateButton": { "message": "验证", "description": "验证按钮文案" },
+  "editButton": { "message": "编辑", "description": "编辑按钮文案" },
+  "updateButton": { "message": "更新", "description": "更新按钮文案" },
+  "markerSearchPlaceholder": {
+    "message": "搜索标注名称、选择器...",
+    "description": "元素标注搜索框占位文案"
+  },
+  "markerFilteredStats": {
+    "message": "筛选出 $FILTERED$ 个标注（共 $TOTAL$ 个，$DOMAINS$ 个域名）",
+    "description": "筛选后的标注统计",
+    "placeholders": {
+      "filtered": { "content": "$1" },
+      "total": { "content": "$2" },
+      "domains": { "content": "$3" }
+    }
+  },
+  "markerStats": {
+    "message": "共 $TOTAL$ 个标注，$DOMAINS$ 个域名",
+    "description": "标注统计",
+    "placeholders": {
+      "total": { "content": "$1" },
+      "domains": { "content": "$2" }
+    }
+  },
+  "markerCountLabel": {
+    "message": "$COUNT$ 个标注",
+    "description": "标注数量标签",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "noMatchingMarkers": { "message": "未找到匹配的标注", "description": "搜索无结果提示" },
+  "noMarkersMessage": { "message": "暂无标注元素", "description": "空标注列表提示" },
+  "localFileLabel": { "message": "(本地文件)", "description": "本地文件域名标签" },
+  "unknownUrlLabel": { "message": "(未知URL)", "description": "未知 URL 标签" },
+  "confirmDeleteMarkerMessage": {
+    "message": "确定要删除标注 \"$NAME$\" 吗?",
+    "description": "删除标注确认提示",
+    "placeholders": { "name": { "content": "$1" } }
+  },
+  "v3TriggerCreateUnavailable": {
+    "message": "V3 Trigger 管理尚未实现，暂时无法创建触发器",
+    "description": "创建 V3 触发器不可用提示"
+  },
+  "v3TriggerEditUnavailable": {
+    "message": "V3 Trigger 管理尚未实现，暂时无法编辑触发器",
+    "description": "编辑 V3 触发器不可用提示"
+  },
+  "v3BuilderEditUnavailable": {
+    "message": "V3 Builder 尚未实现，暂时无法编辑工作流",
+    "description": "编辑工作流不可用提示"
+  },
+  "v3BuilderCreateUnavailable": {
+    "message": "V3 Builder 尚未实现，暂时无法创建工作流",
+    "description": "创建工作流不可用提示"
+  },
+  "confirmDeleteWorkflowMessage": {
+    "message": "确认删除该工作流？此操作不可恢复",
+    "description": "删除工作流确认提示"
+  },
+  "replayFailedLog": { "message": "回放失败", "description": "回放失败日志" },
+  "scheduleExecutionTitle": { "message": "定时执行", "description": "定时执行弹窗标题" },
+  "enabledLabel": { "message": "启用", "description": "启用标签" },
+  "enableScheduleLabel": { "message": "启用定时", "description": "启用定时标签" },
+  "typeLabel": { "message": "类型", "description": "类型标签" },
+  "scheduleTypeInterval": { "message": "每隔 N 分钟", "description": "间隔执行类型" },
+  "scheduleTypeDaily": { "message": "每天固定时间", "description": "每天执行类型" },
+  "scheduleTypeOnce": { "message": "只执行一次", "description": "一次执行类型" },
+  "intervalMinutesLabel": { "message": "间隔(分钟)", "description": "间隔分钟标签" },
+  "timeHhMmLabel": { "message": "时间(HH:mm)", "description": "HH:mm 时间标签" },
+  "timeIsoLabel": { "message": "时间(ISO)", "description": "ISO 时间标签" },
+  "timeHhMmPlaceholder": { "message": "例如 09:30", "description": "HH:mm 占位文案" },
+  "timeIsoPlaceholder": {
+    "message": "例如 2025-10-05T10:00:00",
+    "description": "ISO 时间占位文案"
+  },
+  "argsJsonLabel": { "message": "参数(JSON)", "description": "定时参数标签" },
+  "existingSchedulesLabel": { "message": "已有计划", "description": "已有计划区块标题" },
+  "scheduleIntervalDescription": {
+    "message": "每 $MINUTES$ 分钟",
+    "description": "间隔计划描述",
+    "placeholders": { "minutes": { "content": "$1" } }
+  },
+  "scheduleDailyDescription": {
+    "message": "每天 $TIME$",
+    "description": "每天计划描述",
+    "placeholders": { "time": { "content": "$1" } }
+  },
+  "scheduleOnceDescription": {
+    "message": "一次 $TIME$",
+    "description": "一次计划描述",
+    "placeholders": { "time": { "content": "$1" } }
+  },
+  "runStatusLabel": { "message": "状态", "description": "运行状态标签" },
+  "durationLabel": { "message": "耗时", "description": "运行耗时标签" },
+  "runStatusQueued": { "message": "排队中", "description": "排队中运行状态" },
+  "runStatusRunning": { "message": "运行中", "description": "运行中运行状态" },
+  "runStatusPaused": { "message": "已暂停", "description": "已暂停运行状态" },
+  "runStatusSucceeded": { "message": "成功", "description": "成功运行状态" },
+  "runStatusFailed": { "message": "失败", "description": "失败运行状态" },
+  "runStatusCanceled": { "message": "已取消", "description": "已取消运行状态" }
 }

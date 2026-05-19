@@ -245,9 +245,9 @@
                       :style="{ color: 'var(--ac-text-muted)' }"
                     >
                       <div class="flex items-center gap-2">
-                        <span>状态: {{ getRunStatusText(run) }}</span>
+                        <span>{{ getMessage('runStatusLabel') }}: {{ getRunStatusText(run) }}</span>
                         <span v-if="run.finishedAt"
-                          >• 耗时:
+                          >• {{ getMessage('durationLabel') }}:
                           {{
                             Math.round(
                               (new Date(run.finishedAt).getTime() -
@@ -411,6 +411,7 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue';
 import WorkflowListItem from './WorkflowListItem.vue';
+import { getMessage } from '@/utils/i18n';
 
 interface FlowLite {
   id: string;
@@ -521,17 +522,17 @@ function getRunStatusColor(run: RunLite): string {
 function getRunStatusText(run: RunLite): string {
   if (run.status) {
     const statusMap: Record<string, string> = {
-      queued: '排队中',
-      running: '运行中',
-      paused: '已暂停',
-      succeeded: '成功',
-      failed: '失败',
-      canceled: '已取消',
+      queued: getMessage('runStatusQueued'),
+      running: getMessage('runStatusRunning'),
+      paused: getMessage('runStatusPaused'),
+      succeeded: getMessage('runStatusSucceeded'),
+      failed: getMessage('runStatusFailed'),
+      canceled: getMessage('runStatusCanceled'),
     };
     return statusMap[run.status] || run.status;
   }
   // V2 fallback
-  return run.success ? '成功' : '失败';
+  return run.success ? getMessage('runStatusSucceeded') : getMessage('runStatusFailed');
 }
 
 function formatTime(dateStr: string): string {

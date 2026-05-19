@@ -564,5 +564,170 @@
   "featureRecordReplay": {
     "message": "Recording & Replay",
     "description": "Display name for the recording & replay feature"
-  }
+  },
+  "backHomeTitle": { "message": "Back to home", "description": "Tooltip for returning home" },
+  "backButton": { "message": "Back", "description": "Back button text" },
+  "sidepanelNavigatorTooltip": {
+    "message": "Switch page (drag to move, double-click to reset position)",
+    "description": "Tooltip for the floating sidepanel navigator"
+  },
+  "sidepanelNavigatorTitle": {
+    "message": "Switch Page",
+    "description": "Title for the floating sidepanel navigator menu"
+  },
+  "elementMarkerCurrentPageLabel": {
+    "message": "Current Page",
+    "description": "Current page label in element marker management"
+  },
+  "elementMarkerMarkedElementsLabel": {
+    "message": "Marked Elements",
+    "description": "Marked elements count label"
+  },
+  "elementMarkerAddTitle": {
+    "message": "Add Marker",
+    "description": "Add marker dialog title"
+  },
+  "elementMarkerEditTitle": {
+    "message": "Edit Marker",
+    "description": "Edit marker dialog title"
+  },
+  "elementMarkerNamePlaceholder": {
+    "message": "Name, e.g. Login button",
+    "description": "Element marker name placeholder"
+  },
+  "elementMarkerSelectorPlaceholder": {
+    "message": "CSS selector",
+    "description": "CSS selector placeholder"
+  },
+  "elementMarkerSelectorOrXPathPlaceholder": {
+    "message": "CSS selector or XPath",
+    "description": "Selector or XPath placeholder"
+  },
+  "selectorTypeLabel": { "message": "Selector Type", "description": "Selector type label" },
+  "matchTypeLabel": { "message": "Match Type", "description": "Match type label" },
+  "selectorLabel": { "message": "Selector", "description": "Selector field label" },
+  "matchTypePrefix": { "message": "Path Prefix", "description": "Path prefix match type" },
+  "matchTypeExact": { "message": "Exact Match", "description": "Exact match type" },
+  "matchTypeHost": { "message": "Domain", "description": "Domain match type" },
+  "clearButton": { "message": "Clear", "description": "Clear button text" },
+  "validateButton": { "message": "Validate", "description": "Validate button text" },
+  "editButton": { "message": "Edit", "description": "Edit button text" },
+  "updateButton": { "message": "Update", "description": "Update button text" },
+  "markerSearchPlaceholder": {
+    "message": "Search marker name or selector...",
+    "description": "Element marker search placeholder"
+  },
+  "markerFilteredStats": {
+    "message": "Filtered $FILTERED$ markers ($TOTAL$ total, $DOMAINS$ domains)",
+    "description": "Filtered marker statistics",
+    "placeholders": {
+      "filtered": { "content": "$1" },
+      "total": { "content": "$2" },
+      "domains": { "content": "$3" }
+    }
+  },
+  "markerStats": {
+    "message": "$TOTAL$ markers across $DOMAINS$ domains",
+    "description": "Marker statistics",
+    "placeholders": {
+      "total": { "content": "$1" },
+      "domains": { "content": "$2" }
+    }
+  },
+  "markerCountLabel": {
+    "message": "$COUNT$ markers",
+    "description": "Marker count label",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "noMatchingMarkers": {
+    "message": "No matching markers found",
+    "description": "Empty search results message"
+  },
+  "noMarkersMessage": {
+    "message": "No marked elements yet",
+    "description": "Empty marker list message"
+  },
+  "localFileLabel": { "message": "(Local file)", "description": "Local file domain label" },
+  "unknownUrlLabel": { "message": "(Unknown URL)", "description": "Unknown URL label" },
+  "confirmDeleteMarkerMessage": {
+    "message": "Delete marker \"$NAME$\"?",
+    "description": "Delete marker confirmation message",
+    "placeholders": { "name": { "content": "$1" } }
+  },
+  "v3TriggerCreateUnavailable": {
+    "message": "V3 Trigger management is not implemented yet, so triggers cannot be created.",
+    "description": "Unavailable message for creating V3 triggers"
+  },
+  "v3TriggerEditUnavailable": {
+    "message": "V3 Trigger management is not implemented yet, so triggers cannot be edited.",
+    "description": "Unavailable message for editing V3 triggers"
+  },
+  "v3BuilderEditUnavailable": {
+    "message": "V3 Builder is not implemented yet, so workflows cannot be edited.",
+    "description": "Unavailable message for editing workflows"
+  },
+  "v3BuilderCreateUnavailable": {
+    "message": "V3 Builder is not implemented yet, so workflows cannot be created.",
+    "description": "Unavailable message for creating workflows"
+  },
+  "confirmDeleteWorkflowMessage": {
+    "message": "Delete this workflow? This cannot be undone.",
+    "description": "Delete workflow confirmation message"
+  },
+  "replayFailedLog": { "message": "Replay failed", "description": "Replay failure log" },
+  "scheduleExecutionTitle": {
+    "message": "Scheduled Execution",
+    "description": "Schedule dialog title"
+  },
+  "enabledLabel": { "message": "Enabled", "description": "Enabled label" },
+  "enableScheduleLabel": { "message": "Enable schedule", "description": "Enable schedule label" },
+  "typeLabel": { "message": "Type", "description": "Type label" },
+  "scheduleTypeInterval": {
+    "message": "Every N minutes",
+    "description": "Interval schedule type"
+  },
+  "scheduleTypeDaily": {
+    "message": "Fixed daily time",
+    "description": "Daily schedule type"
+  },
+  "scheduleTypeOnce": { "message": "Run once", "description": "One-time schedule type" },
+  "intervalMinutesLabel": {
+    "message": "Interval (minutes)",
+    "description": "Interval minutes label"
+  },
+  "timeHhMmLabel": { "message": "Time (HH:mm)", "description": "HH:mm time label" },
+  "timeIsoLabel": { "message": "Time (ISO)", "description": "ISO time label" },
+  "timeHhMmPlaceholder": { "message": "e.g. 09:30", "description": "HH:mm placeholder" },
+  "timeIsoPlaceholder": {
+    "message": "e.g. 2025-10-05T10:00:00",
+    "description": "ISO time placeholder"
+  },
+  "argsJsonLabel": { "message": "Args (JSON)", "description": "Schedule args label" },
+  "existingSchedulesLabel": {
+    "message": "Existing Schedules",
+    "description": "Existing schedules section title"
+  },
+  "scheduleIntervalDescription": {
+    "message": "Every $MINUTES$ minutes",
+    "description": "Interval schedule description",
+    "placeholders": { "minutes": { "content": "$1" } }
+  },
+  "scheduleDailyDescription": {
+    "message": "Daily at $TIME$",
+    "description": "Daily schedule description",
+    "placeholders": { "time": { "content": "$1" } }
+  },
+  "scheduleOnceDescription": {
+    "message": "Once at $TIME$",
+    "description": "One-time schedule description",
+    "placeholders": { "time": { "content": "$1" } }
+  },
+  "runStatusLabel": { "message": "Status", "description": "Run status label" },
+  "durationLabel": { "message": "Duration", "description": "Run duration label" },
+  "runStatusQueued": { "message": "Queued", "description": "Queued run status" },
+  "runStatusRunning": { "message": "Running", "description": "Running run status" },
+  "runStatusPaused": { "message": "Paused", "description": "Paused run status" },
+  "runStatusSucceeded": { "message": "Succeeded", "description": "Succeeded run status" },
+  "runStatusFailed": { "message": "Failed", "description": "Failed run status" },
+  "runStatusCanceled": { "message": "Canceled", "description": "Canceled run status" }
 }

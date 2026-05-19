@@ -12,7 +12,7 @@
       :class="{ 'navigator-trigger-active': isOpen }"
       @click="handleTriggerClick"
       @dblclick="resetToDefault"
-      title="切换页面（可拖拽移动，双击重置位置）"
+      :title="getMessage('sidepanelNavigatorTooltip')"
     >
       <svg
         class="navigator-icon"
@@ -32,7 +32,7 @@
       <div v-if="isOpen" class="navigator-overlay" @click="closeMenu">
         <div class="navigator-menu" :style="menuStyle" @click.stop>
           <div class="navigator-header">
-            <span class="navigator-title">切换页面</span>
+            <span class="navigator-title">{{ getMessage('sidepanelNavigatorTitle') }}</span>
             <button class="navigator-close" @click="closeMenu">
               <svg
                 viewBox="0 0 24 24"
@@ -69,8 +69,8 @@
                 </svg>
               </div>
               <div class="navigator-item-content">
-                <span class="navigator-item-title">智能助手</span>
-                <span class="navigator-item-desc">AI Agent 对话与任务</span>
+                <span class="navigator-item-title">{{ getMessage('agentChatTitle') }}</span>
+                <span class="navigator-item-desc">{{ getMessage('agentChatDesc') }}</span>
               </div>
               <div v-if="activeTab === 'agent-chat'" class="navigator-item-check">
                 <svg
@@ -107,8 +107,10 @@
                 </svg>
               </div>
               <div class="navigator-item-content">
-                <span class="navigator-item-title">工作流管理</span>
-                <span class="navigator-item-desc">录制与回放自动化流程</span>
+                <span class="navigator-item-title">{{
+                  getMessage('workflowManagementTitle')
+                }}</span>
+                <span class="navigator-item-desc">{{ getMessage('workflowManagementDesc') }}</span>
               </div>
               <div v-if="activeTab === 'workflows'" class="navigator-item-check">
                 <svg
@@ -145,8 +147,8 @@
                 </svg>
               </div>
               <div class="navigator-item-content">
-                <span class="navigator-item-title">元素标注管理</span>
-                <span class="navigator-item-desc">管理页面元素标注</span>
+                <span class="navigator-item-title">{{ getMessage('elementMarkerTitle') }}</span>
+                <span class="navigator-item-desc">{{ getMessage('elementMarkerDesc') }}</span>
               </div>
               <div v-if="activeTab === 'element-markers'" class="navigator-item-check">
                 <svg
@@ -171,6 +173,7 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue';
 import { useFloatingDrag } from '../composables/useFloatingDrag';
+import { getMessage } from '@/utils/i18n';
 
 type TabType = 'workflows' | 'element-markers' | 'agent-chat';
 

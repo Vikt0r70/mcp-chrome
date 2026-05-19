@@ -296,7 +296,7 @@ import PropertyPanel from '@/entrypoints/popup/components/builder/components/Pro
 import EdgePropertyPanel from '@/entrypoints/popup/components/builder/components/EdgePropertyPanel.vue';
 import TriggerPanel from '@/entrypoints/popup/components/builder/components/TriggerPanel.vue';
 
-const title = ref('工作流编辑器');
+const title = ref('Workflow Editor');
 // theme state: persisted in localStorage and default to system preference
 const theme = ref<'light' | 'dark'>(
   (localStorage.getItem('rr-theme') as 'light' | 'dark' | null) ||

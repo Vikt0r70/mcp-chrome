@@ -1440,7 +1440,7 @@ const switchModel = async (newModel: ModelPreset) => {
       currentModel.value = newModel;
       modelSwitchProgress.value = getMessage('successNotification');
       console.log(
-        '模型切换成功:',
+        'Model switched:',
         newModel,
         'version: quantized',
         'dimension:',
@@ -1464,7 +1464,7 @@ const switchModel = async (newModel: ModelPreset) => {
     modelInitializationStatus.value = 'error';
     isModelDownloading.value = false;
 
-    const errorMessage = error?.message || '未知错误';
+    const errorMessage = error?.message || 'Unknown error';
     if (
       errorMessage.includes('network') ||
       errorMessage.includes('fetch') ||
